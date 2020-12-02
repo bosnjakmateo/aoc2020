@@ -1,10 +1,10 @@
 package main
 
 func CalculateExpenseOfTwoEntries(expenses []int) int {
-	for i := range expenses {
-		for j := range expenses {
-			if expenses[i]+expenses[j] == 2020 {
-				return expenses[i] * expenses[j]
+	for _, e1 := range expenses {
+		for _, e2 := range expenses {
+			if e1+e2 == 2020 {
+				return e1 * e2
 			}
 		}
 	}
@@ -13,11 +13,11 @@ func CalculateExpenseOfTwoEntries(expenses []int) int {
 }
 
 func CalculateExpenseOfThreeEntries(expenses []int) int {
-	for i := range expenses {
-		for j := range expenses {
-			for k := range expenses {
-				if expenses[i]+expenses[j]+expenses[k] == 2020 {
-					return expenses[i] * expenses[j] * expenses[k]
+	for _, e1 := range expenses {
+		for _, e2 := range expenses {
+			for _, e3 := range expenses {
+				if e1+e2+e3 == 2020 {
+					return e1 * e2 * e3
 				}
 			}
 		}
