@@ -29,7 +29,7 @@ func FindTheNumberOfJoltDifferences(adapters []int) int {
 
 func FindTheNumberOfDistinctAdapterArrangements(adapters []int) (count int) {
 	adapters = sortAndAddValues(adapters, 0, utils.Max(adapters)+3)
-	combosUpToIndex := utils.CreateAnArray(len(adapters), 1)
+	combosUpToIndex := utils.CreateArray(len(adapters), 1)
 
 	for i := 1; i < len(adapters); i++ {
 		combosUpToIndex[i] = combosUpToIndex[i-1]
